@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script>
+var tickers = [
+'ABEV3',
+'BBAS3',
+'BBDC4',
+'BBSE3',
+'BRAP4',
+'BRFS3',
+'BRKM5',
+'BRML3',
+'BRPR3',
+'BVMF3',
+'CCRO3',
+'CESP6',
+'CIEL3',
+'CMIG4',
+'COCE5',
+'CPFE3',
+'CPLE6',
+'CRUZ3',
+'CSAN3',
+'CSNA3',
+'CTIP3',
+'CYRE3',
+'DTEX3',
+'ECOR3',
+'ELET3',
+'EMBR3',
+'ENBR3',
+'EQTL3',
+'ESTC3',
+'ETER3',
+'EZTC3',
+'FIBR3',
+'GETI3',
+'GFSA3',
+'GGBR4',
+'GOAU4',
+'GOLL4',
+'GRND3',
+'HGTX3',
+'HYPE3',
+'ITSA4',
+'ITUB4',
+'JBSS3',
+'KLBN11',
+'KROT3',
+'LAME4',
+'LINX3',
+'LREN3',
+'MGLU3',
+'MRFG3',
+'MRVE3',
+'MULT3',
+'MYPK3',
+'NATU3',
+'OIBR4',
+'PCAR4',
+'PDGR3',
+'PETR4',
+'POMO4',
+'PSSA3',
+'PTBL3',
+'QUAL3',
+'RADL3',
+'RENT3',
+'RSID3',
+'RUMO3',
+'SANB11',
+'SBSP3',
+'SLED4',
+'SMLE3',
+'SULA11',
+'SUZB5',
+'TBLE3',
+'TEMP3',
+'TIMP3',
+'TOTS3',
+'TRPL4',
+'UGPA3',
+'USIM5',
+'VALE5',
+'VIVT4',
+];
+
+$(document).ready(function() {
+    var anchors = '';
+
+    for (var i = 0; i < tickers.length; i++) {
+        anchors += '<a href="#'+tickers[i]+'">'+tickers[i]+'</a> ';
+    }
+
+    var txt1 = document.createElement('p');
+    txt1.innerHTML = anchors;
+    $("#anchors").append(txt1);
+
+    var imgs = '';
+
+    for (var i = 0; i < tickers.length; i++) {
+        imgs += '<a name="'+tickers[i]+'"><img alt="'+tickers[i]+'" src="https://chart.finance.yahoo.com/z?s='+tickers[i]+'.SA&t=6m&q=c&l=on&z=l&p=m20,m10,b&a=vm&region=BR&lang=pt-BR"/></a><a href="#top">[^]</a><br/><hr/>';
+    }
+
+    var txt = document.createElement('p');
+    txt.innerHTML = imgs;
+    $("#imgs").append(txt);
+});
+</script>
+</head>
+<body>
+
+<h2 id="top">Ativos da Bovespa</h2>
+<div id="anchors"></div>
+<div id="imgs"></div>
+
+</body>
+</html>
