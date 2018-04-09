@@ -101,7 +101,7 @@ $(document).ready(function() {
     var imgs = '';
 
     for (var i = 0; i < tickers.length; i++) {
-        imgs += '<a name="'+tickers[i]+'"><img alt="'+tickers[i]+'" src="https://br.advfn.com/p.php?pid=staticchart&s=BOV%5E'+tickers[i]+'&t=37&p=4&dm=2&vol=1&width=670&height=600&min_pre=0&min_after=0"/></a><a href="#top">[^]</a><br/><hr/>';
+        imgs += '<b>'+tickers[i]+'</b><br/><a name="'+tickers[i]+'"><img alt="'+tickers[i]+'" src="https://br.advfn.com/p.php?pid=staticchart&s=BOV%5E'+tickers[i]+'&t=37&p=4&dm=2&vol=1&width=670&height=600&min_pre=0&min_after=0"/></a><a href="#top">[^]</a><br/><hr/>';
     }
 
     var txt = document.createElement('p');
