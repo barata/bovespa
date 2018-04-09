@@ -101,7 +101,7 @@ $(document).ready(function() {
     var imgs = '';
 
     for (var i = 0; i < tickers.length; i++) {
-        imgs += '<a name="'+tickers[i]+'"><img alt="'+tickers[i]+'" src="https://chart.finance.yahoo.com/z?s='+tickers[i]+'.SA&t=6m&q=c&l=on&z=l&p=m20,m10,b&a=vm&region=BR&lang=pt-BR"/></a><a href="#top">[^]</a><br/><hr/>';
+        imgs += '<a name="'+tickers[i]+'"><img alt="'+tickers[i]+'" src="https://br.advfn.com/p.php?pid=staticchart&s=BOV%5E'+tickers[i]+'&t=37&p=4&dm=2&vol=1&width=670&height=600&min_pre=0&min_after=0"/></a><a href="#top">[^]</a><br/><hr/>';
     }
 
     var txt = document.createElement('p');
